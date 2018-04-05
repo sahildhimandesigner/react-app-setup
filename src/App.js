@@ -3,11 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import Homewidget from './Homewidget';
-import Welcomenewapp from './Welcomenewapp';
 import Banner from './Banner';
 import Pricing from './Pricing';
-import Appscreen from './Appscreen';
 import Appprice from './Appprice';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -19,11 +16,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Banner />
-        <Pricing heading="test" />
-        <Welcomenewapp />
-        <Homewidget />
-        <Appscreen heading="welcome sahi" />
-        <Appprice />
+        <Appprice pricemainheading="App Pricing" />
         <Footer />
       </div>
     );
