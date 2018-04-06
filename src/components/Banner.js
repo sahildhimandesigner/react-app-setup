@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-import homeimg from './images/homeimg.png';
+import homeimg from '../images/homeimg.png';
 class Banner extends Component {
   render() {
     return (

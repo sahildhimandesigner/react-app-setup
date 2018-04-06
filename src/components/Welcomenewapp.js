@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 class Welcomenewapp extends Component {
   render() {
     return (

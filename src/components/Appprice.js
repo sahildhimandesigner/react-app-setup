@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Apppricecomponent from './Apppricecomponent'
 class Appprice extends Component {
   render() {
