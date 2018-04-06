@@ -2,6 +2,11 @@
 @import 'css/animate.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700');
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
+h1,h2,h3,h4,h5,h6,
+.navbar-default, .btn {
+  font-family: 'Unica One', cursive;
+  font-weight: 400;
+}
 .App {
   text-align: center;
 }
@@ -24,6 +29,7 @@
 }
 #about .col-md-3 h3{ color: #535bd4 !important}
 #about p{color: #fff !important; }
+#about p, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{  font-family: 'Unica One', cursive !important;}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
