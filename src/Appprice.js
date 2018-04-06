@@ -13,9 +13,9 @@ class Appprice extends Component {
                           </div>
                      </div>
 
-                     <Apppricecomponent priceheading="$60" pricesubheading="Starter" />
-                     <Apppricecomponent priceheading="$160" pricesubheading="Business" />
-                     <Apppricecomponent priceheading="$200" pricesubheading="Advanced" />
+                     <Apppricecomponent priceheading="$60" pricesubheading="Starter" usercount="40 Users" userusage="10GB per user" unlimitedsupoort="Unlimited Support" wranty="1 Year License" />
+                     <Apppricecomponent priceheading="$160" pricesubheading="Business" usercount="100 Users" userusage="20GB per user" unlimitedsupoort="Unlimited Support" wranty="2 Year License"  />
+                     <Apppricecomponent priceheading="$200" pricesubheading="Advanced" usercount="200 Users" userusage="30GB per user" unlimitedsupoort="Unlimited Support" wranty="3 Year License"  />
                 </div>
            </div>
       </section>

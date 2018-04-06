@@ -13,10 +13,10 @@ class Apppricecomponent extends Component {
                                <div className="pricing-title">
                                     <h3>{this.props.pricesubheading}</h3>
                                </div>
-                               <p>40 Users</p>
-                               <p>10GB per user</p>
-                               <p>Unlimited Support</p>
-                               <p>1 Year License</p>
+                               <p>{this.props.usercount}</p>
+                               <p>{this.props.userusage}</p>
+                               <p>{this.props.unlimitedsupoort}</p>
+                               <p>{this.props.wranty}</p>
                                <button className="btn btn-default section-btn">Register now</button>
                           </div>
                      </div>
