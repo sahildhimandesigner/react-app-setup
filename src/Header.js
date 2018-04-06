@@ -18,10 +18,8 @@ class Header extends Component {
       			<ul className="nav navbar-nav navbar-right">
       				<li><a href="#home" className="smoothScroll">Home</a></li>
       				<li><a href="#about" className="smoothScroll">About</a></li>
-      				<li><a href="#screenshot" className="smoothScroll">Screenshots</a></li>
               <li><a href="#pricing" className="smoothScroll">Pricing</a></li>
               <li><a href="#newsletter" className="smoothScroll">Newsletter</a></li>
-          		<li><a href="#" data-toggle="modal" data-target="#modal1">Contact</a></li>
       			</ul>
       		</div>
       	</div>
