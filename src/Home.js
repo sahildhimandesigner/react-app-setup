@@ -8,6 +8,7 @@ import Banner from './Banner';
 import Pricing from './Pricing';
 import Appprice from './Appprice';
 import Subscribe from './Subscribe';
+import Appscreen from './Appscreen';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -18,6 +19,7 @@ class Home extends Component {
         <Header />
         <Banner heading="App Starter Page" bannercontent="The optimal way to present your beautiful mobile app for your startup team. Let us create amazing things!" />
         <Welcomenewapp />
+        <Appscreen />
         <Appprice pricemainheading="App Pricing" />
         <Subscribe />
         <Footer />

@@ -12,7 +12,7 @@ class Welcomenewapp extends Component {
                           </div>
                      </div>
 
-                     <div className="wow fadeInUp col-md-6 col-sm-12">
+                     <div className="wow fadeInUp col-md-6 col-sm-6">
                          <h2>Our Mobile App Team</h2>
                          <h3 className="wow fadeInUp">App Starter page is provided by templatemo that can be used for any site.</h3>
                          <p className="wow fadeInUp">This is a responsive <a href="https://plus.google.com/+templatemo" target="_blank">HTML CSS template</a> designed for your mobile app pages. You can modify and use it to fit your needs.</p>
@@ -51,6 +51,8 @@ class Welcomenewapp extends Component {
                 </div>
            </div>
       </section>
+
+
     );
   }
 }
