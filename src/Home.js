@@ -19,7 +19,7 @@ class Home extends Component {
         <Header />
         <Banner heading="App Starter Page" bannercontent="The optimal way to present your beautiful mobile app for your startup team. Let us create amazing things!" />
         <Welcomenewapp />
-        <Appscreen />
+        <Appscreen welcomeheading="Praesent tempor nec orci eu condimentum. Vestibulum varius lorem sed odio lacinia, ut efficitur tellus convallis. Phasellus convallis est nisi, sit amet accumsan ipsum elementum quis. Mauris ac sem mi." />
         <Appprice pricemainheading="App Pricing" />
         <Subscribe />
         <Footer />
