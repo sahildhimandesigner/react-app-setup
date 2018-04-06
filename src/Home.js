@@ -9,8 +9,6 @@ import Pricing from './Pricing';
 import Appprice from './Appprice';
 import Subscribe from './Subscribe';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'jquery/dist/jquery.min.js'
 
 
 class Home extends Component {

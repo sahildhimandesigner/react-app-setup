@@ -9,7 +9,7 @@ class Appprice extends Component {
            <div className="container">
                 <div className="row">
 
-                     <div className="col-md-offset-2 col-md-8 col-sm-12">
+                     <div className="col-md-12 col-sm-12">
                           <div className="wow bounceIn section-title">
                                <h2>Subscribe Newsletter</h2>
                                <p className="wow fadeInUp" data-wow-delay="0.5s">Maecenas orci sem, mollis quis risus a, venenatis condimentum felis. Integer ut bibendum ipsum. Etiam a tristique sapien, ut dictum augue.</p>
@@ -20,7 +20,7 @@ class Appprice extends Component {
 
                                  	  </div>
                                     <div className="col-md-4 col-sm-5">
-                                         
+
                                     </div>
                                </form>
                           </div>
