@@ -1,5 +1,24 @@
 import React, { Component } from 'react';
+import Lightbox from '../components/lightbox';
 class Header extends Component {
+constructor (props)  {
+  super(props);
+  this.state={
+    ShowHI: false,
+  };
+  this.onView = this.onView.bind(this);
+}
+  onView(){
+    this.setState({
+      ShowHI: true
+    });
+  }
+  onClose(){
+    this.setState({
+      ShowHI: false
+    });
+  }
+
   render() {
     return (
       <header className="App-header">
@@ -19,8 +38,10 @@ class Header extends Component {
       				<li><a href="#about" className="smoothScroll">About</a></li>
               <li><a href="#pricing" className="smoothScroll">Pricing</a></li>
               <li><a href="#newsletter" className="smoothScroll">Newsletter</a></li>
+              <li><a href="#newsletter" className="smoothScroll" onClick={this.onView}>Login</a></li>
       			</ul>
       		</div>
+          {(this.state.ShowHI=== true) ? <Lightbox /> : ""}
       	</div>
       </div>
 
