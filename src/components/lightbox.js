@@ -4,8 +4,15 @@ class Lightbox extends Component {
     return (
       <div className="modalpopup">
         <div className="modalcontainer">
-            <h1>HELLO Everyone</h1>
-            <button onClick={this.onView}>Close</button>
+        <div className="modal-header">
+          <button className="pull-right" onClick={this.onView}>Close</button>
+
+        </div>
+        <div className="modal-body">
+        <h1>Subscribe Newsletter</h1>
+        <p>Maecenas orci sem, mollis quis risus a, venenatis condimentum felis. Integer ut bibendum ipsum. Etiam a tristique sapien, ut dictum augue.</p>
+        </div>
+
         </div>
       </div>
     );

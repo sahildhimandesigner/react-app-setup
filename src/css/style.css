@@ -15,6 +15,20 @@ http://www.templatemo.com/tm-492-app-starter
     color: #fff;
 }
 .modalcontainer{ max-width:500px; width: 100%; min-height: 350px; margin-top: 150px; background:#fff; color: #000; display: inline-block;}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+.modalcontainer{    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
 body {
 		background: #1c1c1c !important;
     font-style: normal;
