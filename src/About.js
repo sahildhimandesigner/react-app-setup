@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {withRouter, Link} from 'react-router-dom';
-import Header from '../components/Header';
-import Welcomenewapp from '../components/Welcomenewapp';
-import Footer from '../components/Footer';
-import Banner from '../components/Banner';
+import Header from './components/Header';
+import Welcomenewapp from './components/Welcomenewapp';
+import Footer from './components/Footer';
+import Banner from './components/Banner';
 
 
 class About extends Component {

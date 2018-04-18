@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {withRouter, Link} from 'react-router-dom';
+import About from '../container/About';
 import Lightbox from '../components/lightbox';
 class Header extends Component {
 constructor (props)  {
@@ -8,20 +10,19 @@ constructor (props)  {
   };
   this.onView = this.onView.bind(this);
 }
-  onView(){
-    this.setState({
-      ShowHI: true
-    });
-  }
-  onClose(){
-    this.setState({
-      ShowHI: false
-    });
-  }
-
-  render() {
-    return (
-      <header className="App-header">
+onView(){
+  this.setState({
+    ShowHI: true
+  });
+}
+onClose(){
+  this.setState({
+    ShowHI: false
+  });
+}
+render() {
+  return (
+    <header className="App-header">
       <div className="navbar navbar-default navbar-fixed-top">
       	<div className="container">
       		<div className="navbar-header">
@@ -34,18 +35,15 @@ constructor (props)  {
       		</div>
       		<div className="collapse navbar-collapse">
       			<ul className="nav navbar-nav navbar-right">
-      				<li><a href="#home" className="smoothScroll">Home</a></li>
-      				<li><a href="#about" className="smoothScroll">About</a></li>
-              <li><a href="#pricing" className="smoothScroll">Pricing</a></li>
-              <li><a href="#newsletter" className="smoothScroll">Newsletter</a></li>
+            <li><Link to ="/">Home</Link></li>
+      				<li><Link to ="/about">About</Link></li>
               <li><a href="#newsletter" className="smoothScroll" onClick={this.onView}>Login</a></li>
       			</ul>
       		</div>
           {(this.state.ShowHI=== true) ? <Lightbox /> : ""}
       	</div>
       </div>
-
-      </header>
+    </header>
     );
   }
 }

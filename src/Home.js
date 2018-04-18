@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import {withRouter, Link} from 'react-router-dom';
 import logo from './logo.svg';
-import '../App.css';
+import './App.css';
 import Header from './components/Header';
 import Welcomenewapp from './components/Welcomenewapp';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
-import Pricing from './components/Pricing';
 import Appprice from './components/Appprice';
 import Subscribe from './components/Subscribe';
 import Appscreen from './components/Appscreen';
+
+
 
 class Home extends Component {
   render() {

@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import Home from './container/Home';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Home from './Home';
+import About from './About';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Home />
-      </div>
+      <Router>
+        <Switch>
+         <Route exact path='/' component={Home}/>
+          <Route exact path='/about' component={About}/>
+        </Switch>
+      </Router>
     );
   }
 }

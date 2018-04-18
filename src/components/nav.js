@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Lightbox from '../components/lightbox';
+import Menu from '../components/Menu';
 class Header extends Component {
 constructor (props)  {
   super(props);
@@ -35,7 +36,7 @@ constructor (props)  {
       		<div className="collapse navbar-collapse">
       			<ul className="nav navbar-nav navbar-right">
       				<li><a href="#home" className="smoothScroll">Home</a></li>
-      				<li><a href="#about" className="smoothScroll">About</a></li>
+      				<li><Menu /></li>
               <li><a href="#pricing" className="smoothScroll">Pricing</a></li>
               <li><a href="#newsletter" className="smoothScroll">Newsletter</a></li>
               <li><a href="#newsletter" className="smoothScroll" onClick={this.onView}>Login</a></li>
