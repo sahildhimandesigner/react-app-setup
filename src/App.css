@@ -30,6 +30,15 @@ h1,h2,h3,h4,h5,h6,
 #about .col-md-3 h3{ color: #535bd4 !important}
 #about p{color: #fff !important; }
 #about p, p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{  font-family: 'Unica One', cursive !important;}
+.font-32{font-size: 48px;}
+.font-26{font-size: 30px;}
+.font-20{font-size: 26px;}
+.bottom-margin-30{ margin-bottom: 30px;}
+.top-margin-30{ margin-top: 30px;}
+.content-align-center{ text-align: center;}
+#aboutuscontent{background: #fff;}
+#footer{background: #333; margin-top:50px;}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
