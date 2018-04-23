@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {withRouter, Link} from 'react-router-dom';
 import About from '../container/About';
 import Lightbox from '../components/lightbox';
+import Faq from './Faq';
 class Header extends Component {
 constructor (props)  {
   super(props);
@@ -37,6 +38,7 @@ render() {
       			<ul className="nav navbar-nav navbar-right">
             <li><Link to ="/">Home</Link></li>
       				<li><Link to ="/about">About</Link></li>
+              <li><Link to ="/faq">Faq</Link></li>
               <li><a href="#newsletter" className="smoothScroll" onClick={this.onView}>Login</a></li>
       			</ul>
       		</div>

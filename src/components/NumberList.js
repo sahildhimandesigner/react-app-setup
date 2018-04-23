@@ -1,5 +1,19 @@
 import React, { Component } from 'react';
-function NumberList(props) {
-  return <h1>Hello, {props.name}</h1>;
+import ListItem from './Faqcomponent';
+
+
+class NumberList extends Component{
+  render() {
+  const numbers = this.props.numbers;
+  const listItems = numbers.map((number) =>
+    <ListItem key={number.toString()}
+              value={number} />
+  );
+  return (
+    <ul className="faqlist"> 
+      {listItems}
+    </ul>
+  );
+}
 }
 export default NumberList;
