@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {withRouter, Link} from 'react-router-dom';
 import About from '../container/About';
 import Lightbox from '../components/lightbox';
-import Faq from './Faq';
 class Header extends Component {
 constructor (props)  {
   super(props);
