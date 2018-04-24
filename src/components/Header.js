@@ -9,6 +9,7 @@ constructor (props)  {
     ShowHI: false,
   };
   this.onView = this.onView.bind(this);
+  this.onClose = this.onClose.bind(this);
 }
 onView(){
   this.setState({
@@ -41,7 +42,11 @@ render() {
               <li><a href="#newsletter" className="smoothScroll" onClick={this.onView}>Login</a></li>
       			</ul>
       		</div>
-          {(this.state.ShowHI=== true) ? <Lightbox /> : ""}
+          {(this.state.ShowHI=== true) ?
+            <div className="modalpopup">
+              <div className="modalcontainer"><Lightbox /><button className="pull-right close" onClick={this.onClose} type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button></div></div> : ""}
       	</div>
       </div>
     </header>
