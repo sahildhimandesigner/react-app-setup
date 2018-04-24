@@ -44,9 +44,15 @@ render() {
       		</div>
           {(this.state.ShowHI=== true) ?
             <div className="modalpopup">
-              <div className="modalcontainer"><Lightbox /><button className="pull-right close" onClick={this.onClose} type="button" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button></div></div> : ""}
+              <div className="modalcontainer">
+              <div className="modal-header">
+        <h5 className="modal-title pull-left">Enter Your Details</h5>
+        <button className="pull-right close" onClick={this.onClose} type="button" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">×</span>
+  </button>
+      </div>
+
+              <Lightbox /></div></div> : ""}
       	</div>
       </div>
     </header>
