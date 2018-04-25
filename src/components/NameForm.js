@@ -28,13 +28,13 @@ class NameForm extends Component {
   }
   handleSubmit(event) {
     if (this.state.fname === ''){
-       this.setState({ferror:'Please enter your firstname'})
+       this.setState({ferror:'Enter your name'})
     }
     else if (this.state.lname === ''){
-       this.setState({lerror:'Please enter your Lastname'})
+       this.setState({lerror:'Enter your Lastname'})
     }
     else if (this.state.email === ''){
-       this.setState({emailerror:'Please enter your email'})
+       this.setState({emailerror:'Enter your email'})
     }
     else {
     alert('A name was submitted: ' + this.state.fname + this.state.lname + this.state.email);
