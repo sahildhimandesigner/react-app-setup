@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 class NameForm extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +27,10 @@ class NameForm extends Component {
        this.setState({emailerror:''})
     }
   }
-  handleSubmit(event) {
+  handleSubmit() {
+    axios.get('https://api.github.com/users/maecapozzi')
+    .then(response => console.log(response))
+
     if (this.state.fname === ''){
        this.setState({ferror:'Enter your name'})
     }
