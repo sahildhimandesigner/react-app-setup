@@ -3,7 +3,7 @@ import axios from 'axios';
 class NameForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {fname: '', ferror: '', lname: '', lerror: '', username:'', email: '', emailerror: ''};
+    this.state = {fname: '', ferror: '', lname: '', lerror: '', username:'', email: '', emailerror: '', unamedetails: '', userimage: ''};
     this.fnameChange = this.fnameChange.bind(this);
     this.lnameChange = this.lnameChange.bind(this);
     this.usernameChange = this.usernameChange.bind(this);
@@ -35,6 +35,14 @@ class NameForm extends Component {
     }
   }
   handleSubmit() {
+    axios.get('https://api.github.com/users/'+ this.state.fname +'')
+         .then((response) => {
+            console.log(response)
+           this.setState({
+             unamedetails:response.data.name,
+             userimage:response.data.avatar_url
+           })
+   });
     if (this.state.fname === ''){
        this.setState({ferror:'Enter your name'})
     }
@@ -49,12 +57,9 @@ class NameForm extends Component {
     }
     else {
     alert('A name was submitted: ' + this.state.fname + this.state.lname + this.state.username + this.state.email);
-     axios.get('https://api.github.com/users/'+ this.state.username +'')
-      .then(response => console.log(response))
-
-    }
 
   }
+}
   render() {
     return (
       <form className="col-md-12 col-lg-12 col-sm-12">
@@ -83,9 +88,11 @@ class NameForm extends Component {
 
         </div>
         <input className="btn btn-primary" type="button" value="Submit" onClick={this.handleSubmit} />
+        <p>{this.state.unamedetails}</p>
+        <p><img src={this.state.userimage} /></p>
       </form>
 
-    );
+    )
   }
 }
 
