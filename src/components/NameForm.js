@@ -88,8 +88,14 @@ class NameForm extends Component {
 
         </div>
         <input className="btn btn-primary" type="button" value="Submit" onClick={this.handleSubmit} />
-        <p>{this.state.unamedetails}</p>
-        <p><img src={this.state.userimage} /></p>
+        <table width="100%">
+          <tr>
+            <td align="left"><p><img className="img-responsive" width="100" src={this.state.userimage} /></p></td>
+            <td align="left"><p>{this.state.unamedetails}</p></td>
+          </tr>
+        </table>
+
+
       </form>
 
     )
